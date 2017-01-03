@@ -7,9 +7,9 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.ListView.Types, Data.Bind.GenData,
   Fmx.Bind.GenData, System.Rtti, System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
   Data.Bind.Components, Data.Bind.ObjectScope, FMX.Objects, FMX.StdCtrls, FMX.ListView, FMX.ListView.Appearances,
-  FMX.Layouts, FMX.MultiView,FMX.Memo, Fmx.Bind.Navigator, System.Actions, FMX.ActnList,
+  FMX.Layouts, FMX.MultiView,FMX.Memo, Fmx.Bind.Navigator, System.Actions, FMX.ActnList, U_Datas,
   FMX.ListView.Adapters.Base, FMX.ScrollBox, FMX.Controls.Presentation,
-  FMX.Effects;
+  FMX.Effects, FMX.ListBox, FMX.Edit, FMX.SearchBox;
 
 type
   TMasterDetailForm = class(TForm)
@@ -39,7 +39,6 @@ type
     LiveBindingsBindNavigatePrior1: TFMXBindNavigatePrior;
     btnUp: TSpeedButton;
     btnDown: TSpeedButton;
-    StyleBook1: TStyleBook;
     btnValid: TButton;
     GlowEffect4: TGlowEffect;
     Label3: TLabel;
@@ -48,6 +47,14 @@ type
     GlowEffect1: TGlowEffect;
     Label1: TLabel;
     Image1: TImage;
+    Button2: TButton;
+    ListBox1: TListBox;
+    ListBoxGroupHeader1: TListBoxGroupHeader;
+    ListBoxItem1: TListBoxItem;
+    ListBoxItem2: TListBoxItem;
+    ListBoxGroupFooter1: TListBoxGroupFooter;
+    SearchBox1: TSearchBox;
+    ListBoxHeader2: TListBoxHeader;
     procedure ListView1ItemClick(const Sender: TObject; const AItem: TListViewItem);
   private
     { Private declarations }
