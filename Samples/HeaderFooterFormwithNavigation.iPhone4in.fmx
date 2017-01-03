@@ -1,0 +1,63 @@
+inherited HeaderFooterwithNavigation_iPhone4in: THeaderFooterwithNavigation_iPhone4in
+  ClientHeight = 548
+  ClientWidth = 320
+  DesignerMasterStyle = 0
+  inherited TopToolBar: TToolBar
+    Size.Width = 320.000000000000000000
+    inherited ToolBarLabel: TLabel
+      Size.Width = 320.000000000000000000
+    end
+    inherited btnNext: TSpeedButton
+      Position.X = 276.000000000000000000
+    end
+  end
+  inherited TabControl1: TTabControl
+    Size.Width = 320.000000000000000000
+    Size.Height = 468.000000000000000000
+    Sizes = (
+      320s
+      419s
+      320s
+      419s)
+    inherited TabItem1: TTabItem
+      CustomIcon.Height = 16
+      CustomIcon.Width = 16
+      Size.Width = 159.000000000000000000
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited ListBox1: TListBox
+        Size.Width = 320.000000000000000000
+        Size.Height = 419.000000000000000000
+        Viewport.Width = 196.000000000000000000
+        Viewport.Height = 171.000000000000000000
+        inherited ListBoxItem1: TListBoxItem
+          Position.Y = 17.000000000000000000
+        end
+        inherited ListBoxItem2: TListBoxItem
+          Position.Y = 16.000000000000000000
+        end
+        inherited ListBoxItem4: TListBoxItem
+          TabOrder = 40
+        end
+        inherited ListBoxItem9: TListBoxItem
+          Opacity = 0.500000000000000000
+        end
+        inherited ListBoxHeader2: TListBoxHeader
+          Size.Width = 320.000000000000000000
+          inherited SearchBox1: TSearchBox
+            Size.Width = 320.000000000000000000
+          end
+        end
+      end
+    end
+    inherited TabItem2: TTabItem
+      Size.Width = 159.000000000000000000
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+    end
+  end
+  inherited BottomToolBar: TToolBar
+    Position.Y = 508.000000000000000000
+    Size.Width = 320.000000000000000000
+  end
+end

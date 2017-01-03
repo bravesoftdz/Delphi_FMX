@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{544C0C3A-98D4-42C9-8C0A-CC62CF1712C7}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SimpleLoginForm\MasterDetailApplication.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Samples\HeaderFooterNavigation.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MasterDetailApplication">
+        <MSBuild Projects="SimpleLoginForm\MasterDetailApplication.dproj"/>
+    </Target>
+    <Target Name="MasterDetailApplication:Clean">
+        <MSBuild Projects="SimpleLoginForm\MasterDetailApplication.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MasterDetailApplication:Make">
+        <MSBuild Projects="SimpleLoginForm\MasterDetailApplication.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="HeaderFooterNavigation">
+        <MSBuild Projects="Samples\HeaderFooterNavigation.dproj"/>
+    </Target>
+    <Target Name="HeaderFooterNavigation:Clean">
+        <MSBuild Projects="Samples\HeaderFooterNavigation.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HeaderFooterNavigation:Make">
+        <MSBuild Projects="Samples\HeaderFooterNavigation.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MasterDetailApplication;HeaderFooterNavigation"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MasterDetailApplication:Clean;HeaderFooterNavigation:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MasterDetailApplication:Make;HeaderFooterNavigation:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

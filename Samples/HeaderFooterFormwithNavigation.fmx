@@ -1,0 +1,559 @@
+object HeaderFooterwithNavigation: THeaderFooterwithNavigation
+  Left = 0
+  Top = 0
+  Caption = 'HeaderFooter'
+  ClientHeight = 592
+  ClientWidth = 384
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object TopToolBar: TToolBar
+    Anchors = []
+    Size.Width = 384.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ToolBarLabel: TLabel
+      Action = TitleAction
+      Align = Contents
+      Enabled = True
+      Size.Width = 384.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxheaderlabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Test'
+      Visible = True
+    end
+    object btnBack: TSpeedButton
+      Action = PreviousTabAction1
+      Align = MostLeft
+      Enabled = True
+      ImageIndex = -1
+      Size.Width = 44.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'priortoolbutton'
+      Visible = True
+    end
+    object btnNext: TSpeedButton
+      Action = NextTabAction1
+      Align = MostRight
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 340.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'nexttoolbutton'
+      Visible = True
+    end
+  end
+  object TabControl1: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 384.000000000000000000
+    Size.Height = 512.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = PlatformDefault
+    Sizes = (
+      384s
+      463s
+      384s
+      463s)
+    object TabItem1: TTabItem
+      CustomIcon.Height = 16
+      CustomIcon.Width = 16
+      CustomIcon = <
+        item
+          Width = 17
+          Height = 16
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000011000000100806000000F03194
+            5F000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            016B49444154384FA592BD4EC33014858FF353276D4A7F4606D8986060626543
+            C08090907814161E00064606765E0AF1084C0852051ADB9C6B270515224439D2
+            E77B9DF89EDCBA570170E45F6A4C24700D81525FF2468EC70449FDFA19D5F1C1
+            B53B3CDA6BB6C1E8F46C8B71C985FBEAEE8A89943ABF3EDFDF62F7D1409D1CDD
+            B88DCD75A8482192C3D4C5E53E22EE97F572BE13126B3CD55389ED873922F9A2
+            659BCE3A58E29A967F564CE453C491A6DB48AEC31A1A184B130B43A34EC9BB9A
+            B011CFC2449ED50686266220665DB2AF6FB02599055AF96BF0060D65F9EE5FFC
+            45F2C358EC5055B56715F94EE6B3CA6F565534D009B222479631EA189AB14B4A
+            FA5EA010FB166832998E30196598AC694C8719D1EDA57F53DC7388358B53E6A9
+            439236FFCE7434C0605C201F0FA119850E0F24190B334B2407721A8922551448
+            E23EB4CA0923FA70CA72E89690C3A92175883D039D8471E0C02A2753DBF29BDA
+            8996E8389CB293AAF07465011F62D999DDBEC381510000000049454E44AE4260
+            82}
+        end>
+      TextSettings.WordWrap = True
+      IsSelected = True
+      Size.Width = 191.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Caption Tab Item #1'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object ListBox1: TListBox
+        Align = Contents
+        Size.Width = 384.000000000000000000
+        Size.Height = 463.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Columns = 2
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        ShowCheckboxes = True
+        Viewport.Width = 380.000000000000000000
+        Viewport.Height = 434.000000000000000000
+        object ListBoxItem1: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          TabOrder = 2
+          Text = 'ListBoxItem1'
+        end
+        object ListBoxItem2: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          TabOrder = 3
+          Text = 'ListBoxItem2'
+        end
+        object ListBoxItem3: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 19.000000000000000000
+          TabOrder = 5
+          Text = 'ListBoxItem3'
+        end
+        object ListBoxItem4: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 19.000000000000000000
+          TabOrder = 4
+          Text = 'ListBoxItem3'
+        end
+        object ListBoxItem5: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 38.000000000000000000
+          TabOrder = 0
+          Text = 'ListBoxItem1'
+        end
+        object ListBoxItem6: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 38.000000000000000000
+          TabOrder = 1
+          Text = 'ListBoxItem2'
+        end
+        object ListBoxItem10: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 57.000000000000000000
+          TabOrder = 6
+          Text = 'ListBoxItem3'
+        end
+        object ListBoxItem11: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 57.000000000000000000
+          TabOrder = 7
+          Text = 'ListBoxItem1'
+        end
+        object ListBoxItem12: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 76.000000000000000000
+          TabOrder = 8
+          Text = 'ListBoxItem2'
+        end
+        object ListBoxItem13: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 76.000000000000000000
+          TabOrder = 9
+          Text = 'ListBoxItem3'
+        end
+        object ListBoxItem14: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 95.000000000000000000
+          TabOrder = 10
+          Text = 'ListBoxItem1'
+        end
+        object ListBoxItem15: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 95.000000000000000000
+          TabOrder = 11
+          Text = 'ListBoxItem2'
+        end
+        object ListBoxItem16: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 114.000000000000000000
+          TabOrder = 12
+          Text = 'ListBoxItem3'
+        end
+        object ListBoxItem17: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 114.000000000000000000
+          TabOrder = 13
+          Text = 'ListBoxItem1'
+        end
+        object ListBoxItem18: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 133.000000000000000000
+          TabOrder = 14
+          Text = 'ListBoxItem2'
+        end
+        object ListBoxItem19: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 133.000000000000000000
+          TabOrder = 15
+          Text = 'ListBoxItem3'
+        end
+        object ListBoxItem20: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 152.000000000000000000
+          TabOrder = 16
+          Text = 'ListBoxItem1'
+        end
+        object ListBoxItem21: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 152.000000000000000000
+          TabOrder = 17
+          Text = 'ListBoxItem2'
+        end
+        object ListBoxItem22: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 171.000000000000000000
+          TabOrder = 18
+          Text = 'ListBoxItem3'
+        end
+        object ListBoxItem23: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 171.000000000000000000
+          TabOrder = 19
+          Text = 'ListBoxItem1'
+        end
+        object ListBoxItem24: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 190.000000000000000000
+          TabOrder = 20
+          Text = 'ListBoxItem2'
+        end
+        object ListBoxItem25: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 190.000000000000000000
+          TabOrder = 21
+          Text = 'ListBoxItem3'
+        end
+        object ListBoxItem26: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 209.000000000000000000
+          TabOrder = 22
+          Text = 'ListBoxItem1'
+        end
+        object ListBoxItem27: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 209.000000000000000000
+          TabOrder = 23
+          Text = 'ListBoxItem2'
+        end
+        object ListBoxItem28: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 228.000000000000000000
+          TabOrder = 24
+          Text = 'ListBoxItem3'
+        end
+        object ListBoxItem29: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 228.000000000000000000
+          TabOrder = 25
+          Text = 'ListBoxItem1'
+        end
+        object ListBoxItem30: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 247.000000000000000000
+          TabOrder = 26
+          Text = 'ListBoxItem2'
+        end
+        object ListBoxItem31: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 247.000000000000000000
+          TabOrder = 27
+          Text = 'ListBoxItem3'
+        end
+        object ListBoxItem32: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 266.000000000000000000
+          TabOrder = 28
+          Text = 'ListBoxItem1'
+        end
+        object ListBoxItem33: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 266.000000000000000000
+          TabOrder = 29
+          Text = 'ListBoxItem2'
+        end
+        object ListBoxItem34: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 285.000000000000000000
+          TabOrder = 30
+          Text = 'ListBoxItem3'
+        end
+        object ListBoxItem35: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 285.000000000000000000
+          TabOrder = 31
+          Text = 'ListBoxItem1'
+        end
+        object ListBoxItem36: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 304.000000000000000000
+          TabOrder = 32
+          Text = 'ListBoxItem2'
+        end
+        object ListBoxItem37: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 304.000000000000000000
+          TabOrder = 33
+          Text = 'ListBoxItem3'
+        end
+        object ListBoxItem38: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 323.000000000000000000
+          TabOrder = 34
+          Text = 'ListBoxItem1'
+        end
+        object ListBoxItem39: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 323.000000000000000000
+          TabOrder = 35
+          Text = 'ListBoxItem2'
+        end
+        object ListBoxItem7: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 342.000000000000000000
+          TabOrder = 36
+          Text = 'ListBoxItem3'
+        end
+        object ListBoxItem8: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 342.000000000000000000
+          TabOrder = 37
+          Text = 'ListBoxItem1'
+        end
+        object ListBoxItem9: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          ItemData.Bitmap.PNG = {
+            89504E470D0A1A0A0000000D4948445200000033000000100806000000BB9947
+            B2000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            052A49444154484BDD565B6C145518FECEECCEEEB6DBDD4DB7B44504A206D862
+            6D4B62B8244642B52AB510100982C6C08326824563884134F0C203A1091052C4
+            F8627C50628C411383028A18352140418B844B1489446E0269B74DCB5E6667FC
+            FE33336D5928547DD26FF3ED7FE69CF3FFE7FC977366140087FC5FC0734604FF
+            5D41A8216D0F0EA709A5A9FF8BA3305441C1306883331CDB767B0C834F0AB62D
+            5A4335DDB668172F3952F816D59C27DA9CE69669D2947E2D162C9C44678A4CF3
+            39F3EE0636A846A74439FDC1DB98F24B016AC22ABCD6DAA203202E88E6C69533
+            7161DD26A89029DA500103A3D7B46275FB77D4E54FAF0E6C6DFF1CD6AF5BB02F
+            18C4A4D656BD8EAB20C6BC7631FCC07AC13DBE6D1B9A2D0B6A7ECB6667DCF831
+            8C1CA3A9878037D6CED2912D46EF330F685F6017280BC8FCD987DAD379A4D369
+            C46231249ADA110907B90785CBBB96E3C4C487619494685D150A22D5F105AA5B
+            DED1D9CA662D74EF7B05FB2B26E2D1AE33F8DE34918C468140005C5CDBB81D1C
+            71A4C07D9017FBFBD194CF435686CD0183D52005715B1B0E17D2DE90522EDEE4
+            F3ABD7A3667B1B7AB8394165D3562D758AFC08F976B9E8E53D2B716A72234ED6
+            ECC4BDDB37024B16A2E1DA1406643427F84AB7DB88404755B3EAEA452E7AC45D
+            CA2E38A4CD7AB651D0353D0C64CC2219104DDF738A0B6F6D40FFB113FAF1CAD7
+            AF6A6933838E6D694A5B70746A3F2EAC6DC35D6D6F62F2A96F117F6C96EE7737
+            EF6E6E7001A18543076C1C3954DCEFD31EC8A29A3F678B535539CA3DB0FAD002
+            EBD637DDB2CCD2B353925FB66898E9CDE52DD49ECCA2EBE2259495468BB2AAF0
+            F384E930A27E9999B8FFD01EDD1E1AAE6E9668E5F871E8E999C6CC94B347E2EB
+            A713F86CC54184CEC411307A909919C6BC3513BD1181EBE0B56B598C1AD5E13A
+            53914C4A99EA1B279BB1B071F3937FCB991FAA6A108FC661040370E8919DCFB9
+            0AC3C0910CB30A1CDAE8CE67D178E5349D994A67E21CF59DC9E2CB1D9DB8FB45
+            07015321FBCD3EE43206BACE36A2F9B90631438833369DC96867C405EECB4186
+            4E08FF11B837D9582193819DCB7A9D2380771B0D423697215D1BD55B33506103
+            97661BE8BD7215662280D11FCAF8500CDAD0F9CC5F9709376762E46040EE908D
+            018803B2D44D8E08F29E74D157F508D28B6CF455DA08B42F86D5FC307A7B1FF4
+            460537DA30A2BC3223ACEB4884925108530E07A54BD1A7BC18DDFEFA3307D1F0
+            C74FA83F7714F5673B50FFDB61CD82F817E499215569DCEDF7C739B7E17C27EA
+            4E1DD03694928DB965E31FEEEEA7F7A39F364A6B81448EEFA6AA107A5EF87160
+            DC9FAF94483A539E4CA03C1141793C8C64AC840C171DE4410442ACDFB0A264DB
+            7460B29605CA08E0DCEB9B706CCA0274D6CED37D0255564D5669425884AB3B76
+            E1F843CFEB76C0901297CC0C72EEB27A3CFE5E0D9A5E4AA16E6F0A333AEEC39C
+            A57537CD0B6A5DAEB76ED54E479584E996E701C5CB2B98CA5B78945DC29B4407
+            907FBC6AD5750B630F677160C60A94B0AFE1E076543CF511827CDB5FFE64113A
+            A72F8711A16D412880BAAF36A17AE1C7C85BBC813E5DACBBBBD27DA8288FE1F7
+            65264C9D72AE2B92182EA80315EA30235C37C72CDDF3BE4517CACA60064A1151
+            2C35458952DE48BC6938F10652D7300B249542220B88986E7A537BDAD038612E
+            AA97EE86192F878A25DC77566C2CECD818976524FB5434C1839CE4DCBD483EBB
+            1B39A9162296B2114D15109D24B4D8B6504A792BEA714DCEAD292036D9DD07DF
+            378AB729DF2F1EEF04FD19E149F92C91275FD718C16788C0B721CEF91F9EFFC6
+            861B70EE43FA75EF7F1EC05F9C0B30BE19AD35720000000049454E44AE426082}
+          Position.Y = 361.000000000000000000
+          TabOrder = 38
+          Text = 'srsdfgsdf'
+        end
+        object ListBoxItem40: TListBoxItem
+          AutoTranslate = False
+          TextSettings.WordWrap = True
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.X = 190.000000000000000000
+          Position.Y = 361.000000000000000000
+          TabOrder = 39
+          Text = 'ListBoxItem1'
+        end
+        object ListBoxHeader2: TListBoxHeader
+          Size.Width = 380.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object SearchBox1: TSearchBox
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 0
+            Size.Width = 380.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 191.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Caption Tab Item #2'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+    end
+  end
+  object BottomToolBar: TToolBar
+    Align = Bottom
+    Anchors = [akLeft]
+    Position.Y = 552.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 2
+  end
+  object ActionList1: TActionList
+    Left = 176
+    Top = 56
+    object TitleAction: TControlAction
+      Category = 'Tab'
+      Text = 'TitleAction'
+      OnUpdate = TitleActionUpdate
+    end
+    object PreviousTabAction1: TPreviousTabAction
+      Category = 'Tab'
+      TabControl = TabControl1
+      ShortCut = 137
+    end
+    object NextTabAction1: TNextTabAction
+      Category = 'Tab'
+      TabControl = TabControl1
+    end
+  end
+end

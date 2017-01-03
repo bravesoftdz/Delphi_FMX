@@ -586,7 +586,7 @@ object MasterDetailForm: TMasterDetailForm
       object Button2: TButton
         Position.X = 544.000000000000000000
         Position.Y = 16.000000000000000000
-        TabOrder = 7
+        TabOrder = 6
         Text = 'Button2'
       end
     end
@@ -875,64 +875,6 @@ object MasterDetailForm: TMasterDetailForm
       TabOrder = 2
       Viewport.Width = 750.000000000000000000
       Viewport.Height = 315.000000000000000000
-    end
-    object ListBox1: TListBox
-      Position.X = 528.000000000000000000
-      Position.Y = 200.000000000000000000
-      TabOrder = 3
-      DisableFocusEffect = True
-      ItemIndex = 4
-      DefaultItemStyles.ItemStyle = ''
-      DefaultItemStyles.GroupHeaderStyle = ''
-      DefaultItemStyles.GroupFooterStyle = ''
-      MultiSelectStyle = Extended
-      Viewport.Width = 196.000000000000000000
-      Viewport.Height = 171.000000000000000000
-      object ListBoxGroupHeader1: TListBoxGroupHeader
-        Size.Width = 196.000000000000000000
-        Size.Height = 17.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 0
-        Text = 'ListBoxGroupHeader1'
-      end
-      object ListBoxItem1: TListBoxItem
-        Position.Y = 17.000000000000000000
-        Size.Width = 196.000000000000000000
-        Size.Height = 16.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 1
-        Text = 'ListBoxItem1'
-      end
-      object ListBoxItem2: TListBoxItem
-        Position.Y = 33.000000000000000000
-        Size.Width = 196.000000000000000000
-        Size.Height = 16.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 2
-        Text = 'ListBoxItem2'
-      end
-      object ListBoxGroupFooter1: TListBoxGroupFooter
-        Position.Y = 49.000000000000000000
-        Size.Width = 196.000000000000000000
-        Size.Height = 16.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 3
-        Text = 'ListBoxGroupFooter1'
-      end
-      object ListBoxHeader2: TListBoxHeader
-        Size.Width = 196.000000000000000000
-        Size.Height = 25.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 0
-        object SearchBox1: TSearchBox
-          Touch.InteractiveGestures = [LongTap, DoubleTap]
-          Align = Top
-          TabOrder = 1
-          Size.Width = 196.000000000000000000
-          Size.Height = 22.000000000000000000
-          Size.PlatformDefault = False
-        end
-      end
     end
   end
   object MultiView1: TMultiView

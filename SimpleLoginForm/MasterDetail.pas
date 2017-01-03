@@ -48,13 +48,6 @@ type
     Label1: TLabel;
     Image1: TImage;
     Button2: TButton;
-    ListBox1: TListBox;
-    ListBoxGroupHeader1: TListBoxGroupHeader;
-    ListBoxItem1: TListBoxItem;
-    ListBoxItem2: TListBoxItem;
-    ListBoxGroupFooter1: TListBoxGroupFooter;
-    SearchBox1: TSearchBox;
-    ListBoxHeader2: TListBoxHeader;
     procedure ListView1ItemClick(const Sender: TObject; const AItem: TListViewItem);
   private
     { Private declarations }

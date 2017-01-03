@@ -1,0 +1,202 @@
+inherited HeaderFooterwithNavigation_LgXhdpiPh: THeaderFooterwithNavigation_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  OnKeyUp = FormKeyUp
+  DesignerMasterStyle = 0
+  inherited TopToolBar: TToolBar
+    Size.Width = 450.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited ToolBarLabel: TLabel
+      Size.Width = 450.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+    inherited btnBack: TSpeedButton
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Visible = False
+    end
+    inherited btnNext: TSpeedButton
+      Position.X = 402.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+  end
+  inherited TabControl1: TTabControl
+    Size.Width = 450.000000000000000000
+    Size.Height = 599.000000000000000000
+    Sizes = (
+      450s
+      550s
+      450s
+      550s)
+    inherited TabItem1: TTabItem
+      CustomIcon.Height = 16
+      CustomIcon.Width = 16
+      Size.Width = 225.000000000000000000
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited ListBox1: TListBox
+        Size.Width = 450.000000000000000000
+        Size.Height = 550.000000000000000000
+        Viewport.Width = 445.000000000000000000
+        Viewport.Height = 502.000000000000000000
+        inherited ListBoxItem2: TListBoxItem
+          Position.X = 222.000000000000000000
+        end
+        inherited ListBoxItem3: TListBoxItem
+          Position.Y = 44.000000000000000000
+        end
+        inherited ListBoxItem4: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 44.000000000000000000
+          TabOrder = 40
+        end
+        inherited ListBoxItem5: TListBoxItem
+          Position.Y = 88.000000000000000000
+        end
+        inherited ListBoxItem6: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 88.000000000000000000
+        end
+        inherited ListBoxItem10: TListBoxItem
+          Position.Y = 132.000000000000000000
+        end
+        inherited ListBoxItem11: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 132.000000000000000000
+        end
+        inherited ListBoxItem12: TListBoxItem
+          Position.Y = 176.000000000000000000
+        end
+        inherited ListBoxItem13: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 176.000000000000000000
+        end
+        inherited ListBoxItem14: TListBoxItem
+          Position.Y = 220.000000000000000000
+        end
+        inherited ListBoxItem15: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 220.000000000000000000
+        end
+        inherited ListBoxItem16: TListBoxItem
+          Position.Y = 264.000000000000000000
+        end
+        inherited ListBoxItem17: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 264.000000000000000000
+        end
+        inherited ListBoxItem18: TListBoxItem
+          Position.Y = 308.000000000000000000
+        end
+        inherited ListBoxItem19: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 308.000000000000000000
+        end
+        inherited ListBoxItem20: TListBoxItem
+          Position.Y = 352.000000000000000000
+        end
+        inherited ListBoxItem21: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 352.000000000000000000
+        end
+        inherited ListBoxItem22: TListBoxItem
+          Position.Y = 396.000000000000000000
+        end
+        inherited ListBoxItem23: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 396.000000000000000000
+        end
+        inherited ListBoxItem24: TListBoxItem
+          Position.Y = 440.000000000000000000
+        end
+        inherited ListBoxItem25: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 440.000000000000000000
+        end
+        inherited ListBoxItem26: TListBoxItem
+          Position.Y = 484.000000000000000000
+        end
+        inherited ListBoxItem27: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 484.000000000000000000
+        end
+        inherited ListBoxItem28: TListBoxItem
+          Position.Y = 528.000000000000000000
+        end
+        inherited ListBoxItem29: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 528.000000000000000000
+        end
+        inherited ListBoxItem30: TListBoxItem
+          Position.Y = 572.000000000000000000
+        end
+        inherited ListBoxItem31: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 572.000000000000000000
+        end
+        inherited ListBoxItem32: TListBoxItem
+          Position.Y = 616.000000000000000000
+        end
+        inherited ListBoxItem33: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 616.000000000000000000
+        end
+        inherited ListBoxItem34: TListBoxItem
+          Position.Y = 660.000000000000000000
+        end
+        inherited ListBoxItem35: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 660.000000000000000000
+        end
+        inherited ListBoxItem36: TListBoxItem
+          Position.Y = 704.000000000000000000
+        end
+        inherited ListBoxItem37: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 704.000000000000000000
+        end
+        inherited ListBoxItem38: TListBoxItem
+          Position.Y = 748.000000000000000000
+        end
+        inherited ListBoxItem39: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 748.000000000000000000
+        end
+        inherited ListBoxItem7: TListBoxItem
+          Position.Y = 792.000000000000000000
+        end
+        inherited ListBoxItem8: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 792.000000000000000000
+        end
+        inherited ListBoxItem9: TListBoxItem
+          Opacity = 0.500000000000000000
+          Position.Y = 836.000000000000000000
+        end
+        inherited ListBoxItem40: TListBoxItem
+          Position.X = 222.000000000000000000
+          Position.Y = 836.000000000000000000
+        end
+        inherited ListBoxHeader2: TListBoxHeader
+          Size.Width = 450.000000000000000000
+          Size.Height = 48.000000000000000000
+          inherited SearchBox1: TSearchBox
+            Size.Width = 450.000000000000000000
+            Size.Height = 48.000000000000000000
+          end
+        end
+      end
+    end
+    inherited TabItem2: TTabItem
+      Size.Width = 225.000000000000000000
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+    end
+  end
+  inherited BottomToolBar: TToolBar
+    Position.Y = 647.000000000000000000
+    Size.Width = 450.000000000000000000
+    Size.Height = 48.000000000000000000
+  end
+end
