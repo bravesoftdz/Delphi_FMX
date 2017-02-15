@@ -6,7 +6,9 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Graphics, FMX.Forms, FMX.Dialogs, FMX.TabControl, System.Actions, FMX.ActnList,
   FMX.Objects, FMX.StdCtrls, FMX.Controls.Presentation, FMX.Edit, FMX.SearchBox,
-  FMX.ListBox, FMX.Layouts;
+  FMX.ListBox, FMX.Layouts ,
+  OleDB, ComObj, ActiveX;
+
 
 type
   THeaderFooterwithNavigation = class(TForm)
@@ -94,9 +96,45 @@ begin
 end;
 
 procedure THeaderFooterwithNavigation.FormCreate(Sender: TObject);
+    {I see always people manually building the connection string.
+  Wy not use the dialog that windows provide for us ? Of course
+  it is possible to use the PromptDataSource in ADODB, but this
+  give not the opportunity to see if the user has pressed OK or
+  Cancel, so we dont know when to save the changes. So I use this
+  code instead. I hope it benefit many people. Rgds, Wilfried}
+
+
+  function ADOConnectionString(ParentHandle: THandle; InitialString: WideString;
+    out NewString: string): Boolean;
+  var
+    DataInit: IDataInitialize;
+    DBPrompt: IDBPromptInitialize;
+    DataSource: IUnknown;
+    InitStr: PWideChar;
+  begin
+    Result   := False;
+    DataInit := CreateComObject(CLSID_DataLinks) as IDataInitialize;
+    if InitialString <> '' then
+      DataInit.GetDataSource(nil, CLSCTX_INPROC_SERVER, PWideChar(InitialString),
+        IUnknown, DataSource);
+    DBPrompt := CreateComObject(CLSID_DataLinks) as IDBPromptInitialize;
+    if Succeeded(DBPrompt.PromptDataSource(nil, ParentHandle,
+      DBPROMPTOPTIONS_PROPERTYSHEET, 0, nil, nil, IUnknown, DataSource)) then
+    begin
+      InitStr := nil;
+      DataInit.GetInitializationString(DataSource, True, InitStr);
+      NewString := InitStr;
+      Result    := True;
+    end;
+  end;
+var
+  sString: string;
 begin
   { This defines the default active tab at runtime }
   TabControl1.First(TTabTransition.None);
+
+  ADOConnectionString(0, '', sString);
+  ShowMessage(sString);
 end;
 
 procedure THeaderFooterwithNavigation.FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char; Shift: TShiftState);

@@ -36,11 +36,114 @@ inherited HeaderFooterwithNavigation_iPhone4in: THeaderFooterwithNavigation_iPho
         inherited ListBoxItem2: TListBoxItem
           Position.Y = 16.000000000000000000
         end
+        inherited ListBoxItem3: TListBoxItem
+          TabOrder = 4
+        end
         inherited ListBoxItem4: TListBoxItem
           TabOrder = 40
         end
+        inherited ListBoxItem10: TListBoxItem
+          TabOrder = 5
+        end
+        inherited ListBoxItem11: TListBoxItem
+          TabOrder = 6
+        end
+        inherited ListBoxItem12: TListBoxItem
+          TabOrder = 7
+        end
+        inherited ListBoxItem13: TListBoxItem
+          TabOrder = 8
+        end
+        inherited ListBoxItem14: TListBoxItem
+          TabOrder = 9
+        end
+        inherited ListBoxItem15: TListBoxItem
+          TabOrder = 10
+        end
+        inherited ListBoxItem16: TListBoxItem
+          TabOrder = 11
+        end
+        inherited ListBoxItem17: TListBoxItem
+          TabOrder = 12
+        end
+        inherited ListBoxItem18: TListBoxItem
+          TabOrder = 13
+        end
+        inherited ListBoxItem19: TListBoxItem
+          TabOrder = 14
+        end
+        inherited ListBoxItem20: TListBoxItem
+          TabOrder = 15
+        end
+        inherited ListBoxItem21: TListBoxItem
+          TabOrder = 16
+        end
+        inherited ListBoxItem22: TListBoxItem
+          TabOrder = 17
+        end
+        inherited ListBoxItem23: TListBoxItem
+          TabOrder = 18
+        end
+        inherited ListBoxItem24: TListBoxItem
+          TabOrder = 19
+        end
+        inherited ListBoxItem25: TListBoxItem
+          TabOrder = 20
+        end
+        inherited ListBoxItem26: TListBoxItem
+          TabOrder = 21
+        end
+        inherited ListBoxItem27: TListBoxItem
+          TabOrder = 22
+        end
+        inherited ListBoxItem28: TListBoxItem
+          TabOrder = 23
+        end
+        inherited ListBoxItem29: TListBoxItem
+          TabOrder = 24
+        end
+        inherited ListBoxItem30: TListBoxItem
+          TabOrder = 25
+        end
+        inherited ListBoxItem31: TListBoxItem
+          TabOrder = 26
+        end
+        inherited ListBoxItem32: TListBoxItem
+          TabOrder = 27
+        end
+        inherited ListBoxItem33: TListBoxItem
+          TabOrder = 28
+        end
+        inherited ListBoxItem34: TListBoxItem
+          TabOrder = 29
+        end
+        inherited ListBoxItem35: TListBoxItem
+          TabOrder = 30
+        end
+        inherited ListBoxItem36: TListBoxItem
+          TabOrder = 31
+        end
+        inherited ListBoxItem37: TListBoxItem
+          TabOrder = 32
+        end
+        inherited ListBoxItem38: TListBoxItem
+          TabOrder = 33
+        end
+        inherited ListBoxItem39: TListBoxItem
+          TabOrder = 34
+        end
+        inherited ListBoxItem7: TListBoxItem
+          TabOrder = 35
+        end
+        inherited ListBoxItem8: TListBoxItem
+          TabOrder = 36
+        end
         inherited ListBoxItem9: TListBoxItem
           Opacity = 0.500000000000000000
+          TabOrder = 37
+        end
+        inherited ListBoxItem40: TListBoxItem
+          TabOrder = 38
         end
         inherited ListBoxHeader2: TListBoxHeader
           Size.Width = 320.000000000000000000

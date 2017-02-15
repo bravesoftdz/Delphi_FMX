@@ -39,15 +39,6 @@ type
     LiveBindingsBindNavigatePrior1: TFMXBindNavigatePrior;
     btnUp: TSpeedButton;
     btnDown: TSpeedButton;
-    btnValid: TButton;
-    GlowEffect4: TGlowEffect;
-    Label3: TLabel;
-    Image2: TImage;
-    Button1: TButton;
-    GlowEffect1: TGlowEffect;
-    Label1: TLabel;
-    Image1: TImage;
-    Button2: TButton;
     procedure ListView1ItemClick(const Sender: TObject; const AItem: TListViewItem);
   private
     { Private declarations }
